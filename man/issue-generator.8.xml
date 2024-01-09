@@ -53,23 +53,23 @@
 <!-- body begins here -->
   <refsynopsisdiv id='synopsis'>
     <cmdsynopsis>
-      <command>/usr/sbin/issue-generator</command>
+      <command>issue-generator</command>
       <arg choice='opt'>--prefix <replaceable>path</replaceable></arg>
       <arg choice='opt'>--help</arg>
     </cmdsynopsis>
     <cmdsynopsis>
-      <command>/usr/sbin/issue-generator</command>
+      <command>issue-generator</command>
       <arg choice='plain'>network <group choice='plain'><arg
       choice='plain'>add</arg><arg choice='plain'>remove</arg></group>
       <replaceable>interface</replaceable></arg>
     </cmdsynopsis>
     <cmdsynopsis>
-      <command>/usr/sbin/issue-generator</command>
+      <command>issue-generator</command>
       <arg choice='plain'>ssh<group choice='plain'><arg
       choice='plain'>add</arg><arg choice='plain'>remove</arg></group></arg>
     </cmdsynopsis>
     <cmdsynopsis>
-      <command>/usr/sbin/issue-generator</command>
+      <command>issue-generator</command>
       <arg choice='plain'>--version </arg>
     </cmdsynopsis>
     <para><filename>issue-add-ssh-keys.service</filename></para>

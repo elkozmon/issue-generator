@@ -41,3 +41,6 @@ man/issue-generator.conf.8.html
 man/issue-generator.index.xml
 man/issue-generator.service.8.html
 man/issue.d.5.html
+systemd/issue-add-ssh-keys.service
+systemd/issue-generator.service
+udev/90-issue-generator.rules

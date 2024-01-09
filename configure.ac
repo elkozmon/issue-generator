@@ -13,16 +13,19 @@ then
   ISSUEDIR=${prefix}/lib/issue.d
   UDEVRULESDIR=${prefix}/lib/udev/rules.d
   SYSTEMDDIR=${prefix}/lib/systemd/system
+  SBINDIR=${prefix}/sbin
 else
   TMPFILESDIR=${exec_prefix}/lib/tmpfiles.d
   ISSUEDIR=${exec_prefix}/lib/issue.d
   UDEVRULESDIR=${exec_prefix}/lib/udev/rules.d
   SYSTEMDDIR=${exec_prefix}/lib/systemd/system
+  SBINDIR=${exec_prefix}/sbin
 fi
 AC_SUBST(TMPFILESDIR)
 AC_SUBST(ISSUEDIR)
 AC_SUBST(UDEVRULESDIR)
 AC_SUBST(SYSTEMDDIR)
+AC_SUBST(SBINDIR)
 
 AC_PROG_INSTALL
 AC_PROG_LN_S
@@ -45,4 +48,4 @@ AM_CONDITIONAL(ENABLE_REGENERATE_MAN, test x$enable_man != xno)
 
 AC_OUTPUT([Makefile sbin/Makefile man/Makefile tmpfiles.d/Makefile \
 	udev/Makefile systemd/Makefile tests/Makefile \
-	sbin/issue-generator])
+	sbin/issue-generator systemd/issue-add-ssh-keys.service systemd/issue-generator.service udev/90-issue-generator.rules])

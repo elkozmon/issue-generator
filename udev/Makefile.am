@@ -6,4 +6,4 @@ udevrulesdir = @UDEVRULESDIR@
 
 udevrules_DATA = 90-issue-generator.rules
 
-EXTRA_DIST = $(DATA) sysconfig.issue-generator
+EXTRA_DIST = $(DATA) sysconfig.issue-generator 90-issue-generator.rules.in
