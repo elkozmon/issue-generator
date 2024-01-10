@@ -62,11 +62,9 @@ while true; do
 		usage 1;
 	    fi
 
-	    if [ -f /etc/sysconfig/issue-generator ]; then
-		. /etc/sysconfig/issue-generator
-	    else
-		NETWORK_INTERFACE_REGEX="^[be]"
-	    fi
+		if [ -z "${NETWORK_INTERFACE_REGEX}" ]; then
+			NETWORK_INTERFACE_REGEX="^[be]"
+		fi
 
 	    # Support both ifname (eth0) as well as devpath (/devices/virtual/net/lo)
 	    if [[ "${3}" =~ ^/ ]]; then

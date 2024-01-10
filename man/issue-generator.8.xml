@@ -114,9 +114,8 @@ files ending on <filename>*.issue</filename>, as this are directly shown by
       to insert the IPv4 and IPv6 addresses.</para>
       <para>By default, only network interfaces where the name starts with 'b'
       or 'e' are added. Which interfaces are shown is configureable via a
-      regex expression in in the variable
-      <replaceable>NETWORK_INTERFACE_REGEX</replaceable> in
-      <filename>/etc/sysconfig/issue-generator</filename>.
+      regex expression in the environment variable
+      <replaceable>NETWORK_INTERFACE_REGEX</replaceable>
       </para>
     </listitem>
   </varlistentry>
